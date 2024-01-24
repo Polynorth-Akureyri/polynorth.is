@@ -57,11 +57,19 @@ const ProductsOverview: React.FC = () => {
           </ul>
         </div>
         <div className="columns" id="productscontainer">
-          <div className="column is-12 product-title is-hidden-desktop is-hidden-tablet">
-            <h4 className="subtitle is-4 prod-link is-active" id="mobprod-1">
+          <button
+            onClick={() => setActiveProdId('pl-1')}
+            className={`column is-12 product-title is-hidden-desktop is-hidden-tablet`}
+          >
+            <h4
+              className={`subtitle is-4 prod-link ${
+                activeProdId == 'pl-1' ? 'is-active' : ''
+              }`}
+              id="mobprod-1"
+            >
               Innanhúss einangrun
             </h4>
-          </div>
+          </button>
           <div
             className={`single-product ${
               activeProdId == 'pl-1' ? 'column visible' : 'hidden'
@@ -213,11 +221,19 @@ const ProductsOverview: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="column is-12 product-title is-hidden-desktop is-hidden-tablet">
-            <h4 className="subtitle is-4 prod-link" id="mobprod-2">
+          <button
+            onClick={() => setActiveProdId('pl-2')}
+            className={`column is-12 product-title is-hidden-desktop is-hidden-tablet`}
+          >
+            <h4
+              className={`subtitle is-4 prod-link ${
+                activeProdId == 'pl-2' ? 'is-active' : ''
+              }`}
+              id="mobprod-2"
+            >
               Utanhúss einangrun
             </h4>
-          </div>
+          </button>
           <div
             className={`single-product ${
               activeProdId == 'pl-2' ? 'column visible' : 'hidden'
@@ -351,11 +367,19 @@ const ProductsOverview: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="column is-12 product-title is-hidden-desktop is-hidden-tablet">
-            <h4 className="subtitle is-4 prod-link" id="mobprod-3">
+          <button
+            onClick={() => setActiveProdId('pl-3')}
+            className="column is-12 product-title is-hidden-desktop is-hidden-tablet"
+          >
+            <h4
+              className={`subtitle is-4 prod-link ${
+                activeProdId == 'pl-3' ? 'is-active' : ''
+              }`}
+              id="mobprod-3"
+            >
               Sökkul einangrun
             </h4>
-          </div>
+          </button>
           <div
             className={`single-product ${
               activeProdId == 'pl-3' ? 'column visible' : 'hidden'
@@ -502,11 +526,19 @@ const ProductsOverview: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="column is-12 product-title is-hidden-desktop is-hidden-tablet">
-            <h4 className="subtitle is-4 prod-link" id="mobprod-4">
+          <button
+            onClick={() => setActiveProdId('pl-4')}
+            className="column is-12 product-title is-hidden-desktop is-hidden-tablet"
+          >
+            <h4
+              className={`subtitle is-4 prod-link ${
+                activeProdId == 'pl-4' ? 'is-active' : ''
+              }`}
+              id="mobprod-4"
+            >
               Plötu einangrun
             </h4>
-          </div>
+          </button>
           <div
             className={`single-product ${
               activeProdId == 'pl-4' ? 'column visible' : 'hidden'
@@ -707,11 +739,19 @@ const ProductsOverview: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="column is-12 product-title is-hidden-desktop is-hidden-tablet">
-            <h4 className="subtitle is-4 prod-link" id="mobprod-5">
-              Þak einangrun{' '}
+          <button
+            onClick={() => setActiveProdId('pl-5')}
+            className="column is-12 product-title is-hidden-desktop is-hidden-tablet"
+          >
+            <h4
+              className={`subtitle is-4 prod-link ${
+                activeProdId == 'pl-4' ? 'is-active' : ''
+              }`}
+              id="mobprod-5"
+            >
+              Þak einangrun
             </h4>
-          </div>
+          </button>
           <div
             className={`single-product ${
               activeProdId == 'pl-5' ? 'column visible' : 'hidden'
