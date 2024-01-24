@@ -18,16 +18,173 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--foreground-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/*CSS dump from old main.css*/
+.hero-image {
+  background-image: url('/images/Polynorth_KeyVisForsida.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabs li.is-active a {
+  border-bottom-color: #be1e2d;
+  color: #be1e2d;
+}
+
+.prod-icon img {
+  width: 7em;
+  height: auto;
+  display: block;
+}
+.table thead th {
+  color: white;
+}
+thead tr {
+  background-color: #be1e2d;
+}
+
+.prod-small-title h5.subtitle {
+  margin: 0;
+}
+
+.product-title h4.is-active {
+  text-decoration: underline;
+  color: #be1e2d;
+}
+
+#production {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#foamballs {
+  background-image: url('/images/PolynorthPillow03.jpg') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+#productionbutton {
+  color: White;
+  background-color: #be1e2d;
+}
+#productionbutton:hover {
+  color: black;
+  background-color: white;
+}
+#productioncols .columns .column {
+  display: flex;
+}
+
+/* .servicetitle{
+  display:flex;
+  height:100%;
+  align-content: flex-end;
+}
+
+.servicetag{
+   align-self: flex-end;
+   display: inline-block;
+   align-content: flex-end;
+} */
+.servicetitle h1 {
+  color: #be1e2d;
+}
+
+#quality {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#foamlogo {
+  background-image: url('/images/Polynorth_LogoPressed04.jpg') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+#productionbutton {
+  color: White;
+  background-color: #be1e2d;
+}
+#productionbutton:hover {
+  color: black;
+  background-color: white;
+}
+#qualitycols .columns .column {
+  display: flex;
+}
+
+#aboutimage {
+  padding-left: 9% !important;
+  background-image: url(/images/movedo-construction-bullets-03.jpg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer img {
+    width: 40%;
+    /* Mobile-specific styles here */
+  }
+}
+
+/* Media query for desktop devices */
+@media (min-width: 769px) {
+  .footer img {
+    width: 17%;
+    /* Mobile-specific styles here */
+  }
+}
+
+#contact {
+  background-color: #eee;
+}
+#contacttitle {
+  padding-top: 4% !important;
+  padding-right: 2% !important;
+  padding-bottom: 3% !important;
+  padding-left: 6% !important;
+  border-radius: 4px !important;
+  background-color: #be1e2d;
+}
+#contacttitle h1 {
+  color: white;
+}
+
+#contactinfo {
+  padding-top: 3% !important;
+  padding-right: 2% !important;
+  padding-bottom: 5% !important;
+  padding-left: 6% !important;
+  border-radius: 4px !important;
+  background-color: white;
+}
+
+#contactbutton {
+  color: White;
+  background-color: #be1e2d;
+}
+#contactbutton:hover {
+  color: white;
+  background-color: black;
 }
