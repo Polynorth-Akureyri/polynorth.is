@@ -41,7 +41,7 @@ body {
 
 .tabs li.is-active a {
   border-bottom-color: #be1e2d;
-  color: #be1e2d;
+  color: #be1e2d !important;
 }
 
 .prod-icon img {
@@ -50,7 +50,7 @@ body {
   display: block;
 }
 .table thead th {
-  color: white;
+  color: white !important;
 }
 thead tr {
   background-color: #be1e2d;
@@ -137,8 +137,8 @@ thead tr {
 }
 
 .footer {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 @media (max-width: 768px) {
@@ -156,9 +156,6 @@ thead tr {
   }
 }
 
-#contact {
-  background-color: #eee;
-}
 #contacttitle {
   padding-top: 4% !important;
   padding-right: 2% !important;
@@ -186,5 +183,11 @@ thead tr {
 }
 #contactbutton:hover {
   color: white;
-  background-color: black;
+  background-color: #85151f;
+}
+section.section {
+  @apply sm:py-32 sm:px-12 px-6 py-16;
+}
+section#contact {
+  @apply pt-32;
 }

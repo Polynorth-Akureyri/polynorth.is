@@ -2,11 +2,11 @@ import React from 'react'
 
 const ProductionMethod: React.FC = () => {
   return (
-    <section className="section is-medium" id="production">
+    <section className="section" id="production">
       <div className="columns" id="productioncols">
         <div className="column is-half py-6 min-h-80" id="foamballs"></div>
         <div
-          className="column is-half py-6 px-6 has-background-black"
+          className="column is-half p-6 has-background-black"
           id="productiontext"
         >
           <p className="title has-text-white">
@@ -23,7 +23,7 @@ const ProductionMethod: React.FC = () => {
           <br />
           <a
             href="mailto:polynorth@polynorth.is"
-            className="button is-link"
+            className="button is-link transition-all"
             id="productionbutton"
           >
             Hafðu samband

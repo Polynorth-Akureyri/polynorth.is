@@ -106,7 +106,7 @@ const ProductsOverview: React.FC = () => {
               <div className="table-container">
                 <table className="table is-hoverable is-fullwidth">
                   <thead>
-                    <tr className="is-danger">
+                    <tr className="is-danger text-white">
                       <th>Þykkt</th>
                       <th>Stærð(mm)</th>
                       <th>Vörunúmer</th>
@@ -272,7 +272,7 @@ const ProductsOverview: React.FC = () => {
               <div className="table-container">
                 <table className="table is-hoverable is-fullwidth">
                   <thead>
-                    <tr className="is-danger">
+                    <tr className="is-danger text-white">
                       <th>Þykkt</th>
                       <th>Stærð(mm)</th>
                       <th>Vörunúmer</th>
@@ -415,7 +415,7 @@ const ProductsOverview: React.FC = () => {
               <div className="table-container">
                 <table className="table is-hoverable is-fullwidth">
                   <thead>
-                    <tr className="is-danger">
+                    <tr className="is-danger text-white">
                       <th>Þykkt</th>
                       <th>Stærð(mm)</th>
                       <th>Vörunúmer</th>
@@ -572,7 +572,7 @@ const ProductsOverview: React.FC = () => {
               <div className="table-container">
                 <table className="table is-hoverable is-fullwidth">
                   <thead>
-                    <tr className="is-danger">
+                    <tr className="is-danger text-white">
                       <th>Þykkt</th>
                       <th>Stærð(mm)</th>
                       <th>Vörunúmer</th>
@@ -791,7 +791,7 @@ const ProductsOverview: React.FC = () => {
               <div className="table-container">
                 <table className="table is-hoverable is-fullwidth">
                   <thead>
-                    <tr className="is-danger">
+                    <tr className="is-danger text-white">
                       <th>Þykkt og stærð</th>
                       <th>Vörunúmer</th>
                       <th>Rúmþyngd</th>
