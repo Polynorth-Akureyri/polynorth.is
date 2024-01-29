@@ -13,7 +13,6 @@ import Contact from './components/Contact'
 export default function Home() {
   return (
     <main className="">
-      <Header />
       <Hero
         title="Alltaf gott veður með Polynorth"
         subtitle="Einangrunarplast með reynslu"
@@ -26,7 +25,6 @@ export default function Home() {
       <Quality />
       <About2 />
       <Contact />
-      <Footer />
     </main>
   )
 }

@@ -1,0 +1,6 @@
+.yellow {
+  @apply !bg-yellow-200;
+}
+.blue {
+  @apply !bg-blue-200;
+}

@@ -1,7 +1,22 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Header: React.FC = () => {
+  const [burgerActive, setBurgerActive] = useState(false)
+  // useEffect(() => {
+  //   document.querySelector('.navbar-burger').click(function () {
+  //     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+  //     $('.navbar-burger').toggleClass('is-active')
+  //     $('.navbar-menu').toggleClass('is-active')
+  //   })
+
+  //   $('.navbar-menu a').click(function () {
+  //     // If a link inside the menu is clicked, close the menu
+  //     $('.navbar-burger').removeClass('is-active')
+  //     $('.navbar-menu').removeClass('is-active')
+  //   })
+  // }, [])
   return (
     <header>
       <nav
@@ -23,7 +38,10 @@ const Header: React.FC = () => {
 
           <a
             role="button"
-            className="navbar-burger"
+            className={`navbar-burger ${
+              burgerActive ? 'is-active' : ''
+            } transition-all`}
+            onClick={() => setBurgerActive(!burgerActive)}
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
@@ -34,21 +52,46 @@ const Header: React.FC = () => {
           </a>
         </div>
 
-        <div id="header-menu" className="navbar-menu">
+        <div
+          id="header-menu"
+          className={`navbar-menu ${
+            burgerActive ? 'is-active' : ''
+          } transition-all`}
+        >
           <div className="navbar-start">
-            <a className="navbar-item" href="#products">
+            <a
+              onClick={() => setBurgerActive(false)}
+              className="navbar-item"
+              href="/#products"
+            >
               Vörur
             </a>
-            <a className="navbar-item" href="#quality">
+            <a
+              onClick={() => setBurgerActive(false)}
+              className="navbar-item"
+              href="/#quality"
+            >
               Framleiðsla
             </a>
-            <a className="navbar-item" href="#about1">
+            <a
+              onClick={() => setBurgerActive(false)}
+              className="navbar-item"
+              href="/#about1"
+            >
               Um Polynorth
             </a>
-            <a className="navbar-item" href="#contact">
+            <a
+              onClick={() => setBurgerActive(false)}
+              className="navbar-item"
+              href="/#contact"
+            >
               Hafa Samband
             </a>
-            <a className="navbar-item" href="#reiknivel">
+            <a
+              onClick={() => setBurgerActive(false)}
+              className="navbar-item"
+              href="/reiknivel"
+            >
               Reiknivél
             </a>
           </div>

@@ -157,15 +157,15 @@ thead tr {
 }
 
 #contacttitle {
-  padding-top: 4% !important;
-  padding-right: 2% !important;
-  padding-bottom: 3% !important;
-  padding-left: 6% !important;
   border-radius: 4px !important;
   background-color: #be1e2d;
 }
 #contacttitle h1 {
   color: white;
+  padding-top: 4% !important;
+  padding-right: 2% !important;
+  padding-bottom: 3% !important;
+  padding-left: 6% !important;
 }
 
 #contactinfo {
@@ -186,7 +186,7 @@ thead tr {
   background-color: #85151f;
 }
 section.section {
-  @apply sm:py-32 sm:px-12 px-6 py-16;
+  @apply sm:py-28 sm:px-12 px-6 py-16;
 }
 section#contact {
   @apply pt-32;
