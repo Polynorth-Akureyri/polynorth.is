@@ -87,13 +87,13 @@ const Header: React.FC = () => {
             >
               Hafa Samband
             </a>
-            <a
+            {/* <a
               onClick={() => setBurgerActive(false)}
               className="navbar-item"
               href="/reiknivel"
             >
               Reiknivél
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>
