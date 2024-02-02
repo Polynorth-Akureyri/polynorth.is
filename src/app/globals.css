@@ -40,8 +40,12 @@ body {
 }
 
 .tabs li.is-active a {
-  border-bottom-color: #be1e2d;
+  border-bottom-color: #be1e2d !important;
   color: #be1e2d !important;
+}
+.tabs a:hover {
+  color: #be1e2d !important;
+  border-bottom-color: #be1e2d !important;
 }
 
 .prod-icon img {

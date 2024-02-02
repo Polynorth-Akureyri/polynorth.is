@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" is-fixed-top={'true'}>
+    <html lang="is" is-fixed-top={'true'}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,8 +31,8 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css"
         />
         {/* <link rel="stylesheet" href="main.css" /> */}
-        <link rel="icon" href="favicon.png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="favicon.png" />
+        <link rel="icon" href="/favicon.png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
       <body className={inter.className}>
         <Header />
