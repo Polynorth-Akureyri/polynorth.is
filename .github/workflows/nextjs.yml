@@ -78,15 +78,16 @@ jobs:
       # Static HTML export is done in the build job, and is using nextjs.config.js
       # - name: Static HTML export with Next.js
       #   run: ${{ steps.detect-package-manager.outputs.runner }} next export
+      - name: Testing stuff
+        run: |
+          # Upload the `out` directory as an artifact
+          echo "Uploading artifact..."
+          echo "::set-output name=page_url::https://$GITHUB_REPOSITORY.github.io/$GITHUB_RUN_NUMBER/"
+          echo ls -al
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: out
-          run: |
-            # Upload the `out` directory as an artifact
-            echo "Uploading artifact..."
-            echo "::set-output name=page_url::https://$GITHUB_REPOSITORY.github.io/$GITHUB_RUN_NUMBER/"
-            echo ls -al
 
   # Deployment job
   deploy:
