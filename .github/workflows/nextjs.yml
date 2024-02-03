@@ -81,7 +81,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ./out
+          path: "${{ github.workspace }}"/out
 
   # Deployment job
   deploy:
